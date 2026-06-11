@@ -153,7 +153,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      第一次接觸用ai生成類似影片的形式，雖然畫面不像市面上的動畫那麼精細，但能夠生成一段連續的動畫讓人很有成就感。
+      在生成角色圖片的部分，雖然有些細節不太理想，但整體來說還是能夠看出角色的特徵和風格，如果再有下次的話，我會選擇多加點負面提示詞來提高動畫的品質。
     </div>
   </div>
 
@@ -169,22 +170,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +196,97 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="1.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="2.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="5.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="7.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="3.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"winter day, young man, long wool coat, turtleneck sweater, scarf, calm smile, cold wind",
+          "10" :"winter day, young man, long wool coat, turtleneck sweater, scarf, calm smile, cold wind",
+          "20" :"winter day, young man, long wool coat, turtleneck sweater, scarf, calm smile, cold wind",
+
+          "30" :"snowy winter day, young man, padded jacket, knitted beanie, leather gloves, snowflakes, gentle smile",
+          "40" :"snowy winter day, young man, padded jacket, knitted beanie, leather gloves, snowflakes, gentle smile",
+          "50" :"snowy winter day, young man, padded jacket, knitted beanie, leather gloves, snowflakes, gentle smile",
+
+          "60" :"cold winter evening, young man, dark trench coat, hoodie, slim pants, boots, breath vapor, wind",
+          "70" :"cold winter evening, young man, dark trench coat, hoodie, slim pants, boots, breath vapor, wind",
+          "80" :"cold winter evening, young man, dark trench coat, hoodie, slim pants, boots, breath vapor, wind",
+
+          "90" :"deep winter night, young man, thick down jacket, wool scarf, earmuffs, warm gloves, falling snow",
+          "100" :"deep winter night, young man, thick down jacket, wool scarf, earmuffs, warm gloves, falling snow",
+          "110" :"deep winter night, young man, thick down jacket, wool scarf, earmuffs, warm gloves, falling snow"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="4.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"summer afternoon, young woman, light blouse, floral skirt, sandals, soft smile, bright sunlight",
+          "10" :"summer afternoon, young woman, light blouse, floral skirt, sandals, soft smile, bright sunlight",
+          "20" :"summer afternoon, young woman, light blouse, floral skirt, sandals, soft smile, bright sunlight",
+
+          "30" :"sunny summer day, young woman, sleeveless top, linen skirt, straw hat, gentle breeze",
+          "40" :"sunny summer day, young woman, sleeveless top, linen skirt, straw hat, gentle breeze",
+          "50" :"sunny summer day, young woman, sleeveless top, linen skirt, straw hat, gentle breeze",
+
+          "60" :"summer evening, young woman, light cardigan, camisole, wide-leg pants, sandals, warm sunset",
+          "70" :"summer evening, young woman, light cardigan, camisole, wide-leg pants, sandals, warm sunset",
+          "80" :"summer evening, young woman, light cardigan, camisole, wide-leg pants, sandals, warm sunset",
+
+          "90" :"summer night, young woman, short-sleeved dress, thin jacket, city lights, calm expression",
+          "100" :"summer night, young woman, short-sleeved dress, thin jacket, city lights, calm expression",
+          "110" :"summer night, young woman, short-sleeved dress, thin jacket, city lights, calm expression"
+          <br><br>
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="6.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"spring morning, young man, white shirt, light cardigan, casual pants, sneakers, bright smile",
+          "10" :"spring morning, young man, white shirt, light cardigan, casual pants, sneakers, bright smile",
+          "20" :"spring morning, young man, white shirt, light cardigan, casual pants, sneakers, bright smile",
+
+          "30" :"spring day, young man, denim jacket, striped t-shirt, chinos, backpack, gentle breeze",
+          "40" :"spring day, young man, denim jacket, striped t-shirt, chinos, backpack, gentle breeze",
+          "50" :"spring day, young man, denim jacket, striped t-shirt, chinos, backpack, gentle breeze",
+
+          "60" :"warm spring afternoon, young man, loose hoodie, cargo pants, canvas shoes, blooming flowers",
+          "70" :"warm spring afternoon, young man, loose hoodie, cargo pants, canvas shoes, blooming flowers",
+          "80" :"warm spring afternoon, young man, loose hoodie, cargo pants, canvas shoes, blooming flowers",
+
+          "90" :"spring sunset, young man, light blazer, simple t-shirt, slim jeans, wind, cherry blossoms",
+          "100" :"spring sunset, young man, light blazer, simple t-shirt, slim jeans, wind, cherry blossoms",
+          "110" :"spring sunset, young man, light blazer, simple t-shirt, slim jeans, wind, cherry blossoms"
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -252,4 +337,3 @@
 
 </body>
 </html>
-
